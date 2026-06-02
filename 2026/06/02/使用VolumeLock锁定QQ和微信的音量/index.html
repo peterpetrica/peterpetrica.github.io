@@ -17,27 +17,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
   <meta name="theme-color" content="#f9fafb">
-  <title>Bilibili 评论区钓鱼链接 - Petrica的随笔</title>
+  <title>使用 VolumeLock 锁定 QQ 和微信的音量 - Petrica的随笔</title>
 
   
-    <meta name="description" content="前言最近群友偶然提到在 B 站发现一种挂羊头卖狗肉的链接，具体表现为链接显示的是一个视频的标题，但是点进去实际跳转播放的是另一个视频（结合日期，你应该能想到是什么视频）。 现象分析检查渲染出来的链接如下： 1&lt;a style&#x3D;&quot;--icon-width:1.2em;--icon-height:1.2em;&quot; href&#x3D;&quot;&#x2F;&#x2F;www.bilibili.com&#x2F;vi">
+    <meta name="description" content="起因我时常认为QQ和微信通知的音量相比我正常听歌、观看视频的音量一直是过高的。正常我们可以使用 Windows 的音量合成器来单独调整每个程序的音量。但是，QQ不一样，不一样！你每次调完之后，过几个小时，它自己又会跳回100%，疑似是QQ音频流新建导致的调整失效。 搜寻一番后，发现可以用 wzv5&#x2F;VolumeLock 这个项目来把指定进程的音量固定住。它会通过 Windows 的 Co">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Bilibili 评论区钓鱼链接">
-<meta property="og:url" content="https://petrica.site/2026/02/21/bilibili%E8%AF%84%E8%AE%BA%E5%8C%BA%E9%92%93%E9%B1%BC%E9%93%BE%E6%8E%A5/">
+<meta property="og:title" content="使用 VolumeLock 锁定 QQ 和微信的音量">
+<meta property="og:url" content="https://petrica.site/2026/06/02/%E4%BD%BF%E7%94%A8VolumeLock%E9%94%81%E5%AE%9AQQ%E5%92%8C%E5%BE%AE%E4%BF%A1%E7%9A%84%E9%9F%B3%E9%87%8F/">
 <meta property="og:site_name" content="Petrica的随笔">
-<meta property="og:description" content="前言最近群友偶然提到在 B 站发现一种挂羊头卖狗肉的链接，具体表现为链接显示的是一个视频的标题，但是点进去实际跳转播放的是另一个视频（结合日期，你应该能想到是什么视频）。 现象分析检查渲染出来的链接如下： 1&lt;a style&#x3D;&quot;--icon-width:1.2em;--icon-height:1.2em;&quot; href&#x3D;&quot;&#x2F;&#x2F;www.bilibili.com&#x2F;vi">
+<meta property="og:description" content="起因我时常认为QQ和微信通知的音量相比我正常听歌、观看视频的音量一直是过高的。正常我们可以使用 Windows 的音量合成器来单独调整每个程序的音量。但是，QQ不一样，不一样！你每次调完之后，过几个小时，它自己又会跳回100%，疑似是QQ音频流新建导致的调整失效。 搜寻一番后，发现可以用 wzv5&#x2F;VolumeLock 这个项目来把指定进程的音量固定住。它会通过 Windows 的 Co">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://s1.imagehub.cc/images/2024/10/24/39d21c5fbaa971f46bb5d708efdfe756.jpg">
-<meta property="article:published_time" content="2026-02-21T06:00:00.000Z">
-<meta property="article:modified_time" content="2026-02-21T06:27:35.353Z">
+<meta property="article:published_time" content="2026-06-02T12:15:00.000Z">
+<meta property="article:modified_time" content="2026-06-02T12:32:07.466Z">
 <meta property="article:author" content="Petrica">
-<meta property="article:tag" content="Security">
+<meta property="article:tag" content="Windows VolumeLock">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://s1.imagehub.cc/images/2024/10/24/39d21c5fbaa971f46bb5d708efdfe756.jpg">
   
   
   
-  <meta name="keywords" content="Security">
+  <meta name="keywords" content="Windows VolumeLock">
 
   <!-- feed -->
   
@@ -51,7 +51,7 @@
 
   
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Petrica","sameAs":[],"image":"https://s1.imagehub.cc/images/2024/10/24/39d21c5fbaa971f46bb5d708efdfe756.jpg"},"dateCreated":"2026-02-21T14:00:00+08:00","dateModified":"2026-02-21T14:27:35+08:00","datePublished":"2026-02-21T14:00:00+08:00","description":"","headline":"Bilibili 评论区钓鱼链接","mainEntityOfPage":{"@type":"WebPage","@id":"https://petrica.site/2026/02/21/bilibili%E8%AF%84%E8%AE%BA%E5%8C%BA%E9%92%93%E9%B1%BC%E9%93%BE%E6%8E%A5/"},"publisher":{"@type":"Organization","name":"Petrica","sameAs":[],"image":"https://s1.imagehub.cc/images/2024/10/24/39d21c5fbaa971f46bb5d708efdfe756.jpg","logo":{"@type":"ImageObject","url":"https://s1.imagehub.cc/images/2024/10/24/39d21c5fbaa971f46bb5d708efdfe756.jpg"}},"url":"https://petrica.site/2026/02/21/bilibili%E8%AF%84%E8%AE%BA%E5%8C%BA%E9%92%93%E9%B1%BC%E9%93%BE%E6%8E%A5/","keywords":"Security","image":[]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Petrica","sameAs":[],"image":"https://s1.imagehub.cc/images/2024/10/24/39d21c5fbaa971f46bb5d708efdfe756.jpg"},"dateCreated":"2026-06-02T20:15:00+08:00","dateModified":"2026-06-02T20:32:07+08:00","datePublished":"2026-06-02T20:15:00+08:00","description":"","headline":"使用 VolumeLock 锁定 QQ 和微信的音量","mainEntityOfPage":{"@type":"WebPage","@id":"https://petrica.site/2026/06/02/%E4%BD%BF%E7%94%A8VolumeLock%E9%94%81%E5%AE%9AQQ%E5%92%8C%E5%BE%AE%E4%BF%A1%E7%9A%84%E9%9F%B3%E9%87%8F/"},"publisher":{"@type":"Organization","name":"Petrica","sameAs":[],"image":"https://s1.imagehub.cc/images/2024/10/24/39d21c5fbaa971f46bb5d708efdfe756.jpg","logo":{"@type":"ImageObject","url":"https://s1.imagehub.cc/images/2024/10/24/39d21c5fbaa971f46bb5d708efdfe756.jpg"}},"url":"https://petrica.site/2026/06/02/%E4%BD%BF%E7%94%A8VolumeLock%E9%94%81%E5%AE%9AQQ%E5%92%8C%E5%BE%AE%E4%BF%A1%E7%9A%84%E9%9F%B3%E9%87%8F/","keywords":"Windows VolumeLock","image":[]}</script>
   
 </head>
 <body>
@@ -83,27 +83,60 @@
   <div class="content">
     <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
 <span class="sep"></span><a class="cap breadcrumb" href="/">文章</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2026-02-21T06:00:00.000Z">2026-02-21</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2026-02-21T06:27:35.353Z">2026-02-21</time></span></div></div></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2026-06-02T12:15:00.000Z">2026-06-02</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2026-06-02T12:32:07.466Z">2026-06-02</time></span></div></div></div>
     
     <div class="bottom only-title">
       
       <div class="text-area">
-        <h1 class="text title"><span>Bilibili 评论区钓鱼链接</span></h1>
+        <h1 class="text title"><span>使用 VolumeLock 锁定 QQ 和微信的音量</span></h1>
         
       </div>
     </div>
     
   </div>
-  </div><article class="md-text content"><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>最近群友偶然提到在 B 站发现一种挂羊头卖狗肉的链接，具体表现为链接显示的是一个视频的标题，但是点进去实际跳转播放的是另一个视频（结合日期，你应该能想到是什么视频）。</p>
-<h1 id="现象分析"><a href="#现象分析" class="headerlink" title="现象分析"></a>现象分析</h1><p>检查渲染出来的链接如下：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">style</span>=<span class="string">&quot;--icon-width:1.2em;--icon-height:1.2em;&quot;</span> <span class="attr">href</span>=<span class="string">&quot;//www.bilibili.com/video/BV1xxxxxxxxx/../BV2xxxxxxxxx&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span> <span class="attr">data-type</span>=<span class="string">&quot;link&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;https://i0.hdslb.com/bfs/static/placeholder.png&quot;</span> <span class="attr">loading</span>=<span class="string">&quot;lazy&quot;</span> <span class="attr">style</span>=<span class="string">&quot;width:var(--icon-width);height:var(--icon-height);vertical-align:var(--icon-vertical-align);&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+  </div><article class="md-text content"><h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>我时常认为QQ和微信通知的音量相比我正常听歌、观看视频的音量一直是过高的。正常我们可以使用 Windows 的音量合成器来单独调整每个程序的音量。但是，QQ不一样，不一样！你每次调完之后，过几个小时，它自己又会跳回100%，疑似是QQ音频流新建导致的调整失效。</p>
+<p>搜寻一番后，发现可以用 <a target="_blank" rel="noopener" href="https://github.com/wzv5/VolumeLock">wzv5&#x2F;VolumeLock</a> 这个项目来把指定进程的音量固定住。它会通过 Windows 的 Core Audio API 锁定进程音量。</p>
+<h1 id="下载-VolumeLock"><a href="#下载-VolumeLock" class="headerlink" title="下载 VolumeLock"></a>下载 VolumeLock</h1><p>有两种方式。</p>
+<h2 id="手动下载"><a href="#手动下载" class="headerlink" title="手动下载"></a>手动下载</h2><p>打开项目的 Release 页面：</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/wzv5/VolumeLock/releases/latest">https://github.com/wzv5/VolumeLock/releases/latest</a></p>
+<p>下载后解压，把 <code>VolumeLock.exe</code> 放到一个固定目录，例如：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">D:\Tools\VolumeLock\</span><br></pre></td></tr></table></figure>
 
-<p>可以看到链接的 <code>href</code> 属性中有一个 <code>../</code>，典型的路径穿越。浏览器在解析链接时会将 <code>../</code> 解析为上一级目录，从而导致实际跳转的 URL 与预期不符。</p>
-<h1 id="复现和新问题"><a href="#复现和新问题" class="headerlink" title="复现和新问题"></a>复现和新问题</h1><p>基于这个发现，我尝试在评论区复现这个现象。输入：</p>
-<p><code>https://www.bilibili.com/video/BV1/../BV2</code></p>
-<p>发现 B 站把前后两个 BV 号分别解析了，而 <code>../</code> 没有被当成一个整体被处理。这不是我想要的。</p>
-<h1 id="一点绕过"><a href="#一点绕过" class="headerlink" title="一点绕过"></a>一点绕过</h1><p>自然而然的，我们想到了 URL 编码绕过。不明文表示 <code>../</code>，而是使用对应编码来替换，即 <code>%2E%2E/</code>，用来绕过相关的正则检查，并且也能被浏览器正确解析。</p>
-<p>输入 <code>https://www.bilibili.com/video/BV1/%2E%2E/BV2</code> 能复现出相同的效果。</p>
+<p>后面创建的配置文件也要放在这个目录里。</p>
+<h2 id="使用-Scoop-安装"><a href="#使用-Scoop-安装" class="headerlink" title="使用 Scoop 安装"></a>使用 Scoop 安装</h2><p>如果你已经在用 Scoop，也可以直接安装：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">scoop bucket add wzv5 https://github.com/wzv5/ScoopBucket</span><br><span class="line">scoop install wzv5/volumelock</span><br></pre></td></tr></table></figure>
+
+<h1 id="创建-config-yaml"><a href="#创建-config-yaml" class="headerlink" title="创建 config.yaml"></a>创建 config.yaml</h1><p>在 <code>VolumeLock.exe</code> 所在目录创建一个 <code>config.yaml</code> 文件</p>
+<p>如果你是使用scoop安装，应该是在</p>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\username\scoop\apps\volumelock\20220310</span><br></pre></td></tr></table></figure>
+
+
+<p>写入下面的内容：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">filename</span></span><br><span class="line">    <span class="attr">path:</span> <span class="string">&quot;QQ.exe&quot;</span></span><br><span class="line">    <span class="attr">volume:</span> <span class="number">5</span></span><br><span class="line"><span class="bullet">-</span></span><br><span class="line">    <span class="attr">type:</span> <span class="string">filename</span></span><br><span class="line">    <span class="attr">path:</span> <span class="string">&quot;Weixin.exe&quot;</span></span><br><span class="line">    <span class="attr">volume:</span> <span class="number">5</span></span><br></pre></td></tr></table></figure>
+
+<p>这里的意思是：</p>
+<ol>
+<li>使用 <code>filename</code> 按文件名匹配程序。</li>
+<li>把QQ和微信的音量锁定在 5。</li>
+</ol>
+<p>VolumeLock的更多配置方法请到项目主页查看，这里只介绍QQ和微信的配置。</p>
+<h1 id="启动和测试"><a href="#启动和测试" class="headerlink" title="启动和测试"></a>启动和测试</h1><p>配置好之后，启动 <code>VolumeLock.exe</code>，查看音量合成器对应数值是否为5。</p>
+<h1 id="隐藏窗口和开机自启"><a href="#隐藏窗口和开机自启" class="headerlink" title="隐藏窗口和开机自启"></a>隐藏窗口和开机自启</h1><p>这时你会发现它运行是有控制台窗口的，我们需要隐藏掉。</p>
+<p>创建一个<code>run.vbs</code>文件</p>
+<figure class="highlight vbs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Set</span> WshShell = <span class="built_in">CreateObject</span>(<span class="string">&quot;WScript.Shell&quot;</span>)</span><br><span class="line">WshShell.CurrentDirectory = <span class="string">&quot;PATH\TO\VOLUMELOCK&quot;</span></span><br><span class="line">WshShell.Run <span class="string">&quot;&quot;&quot;PATH\TO\VOLUMELOCK\VolumeLock.exe&quot;&quot;&quot;</span>, <span class="number">0</span>, <span class="literal">False</span></span><br></pre></td></tr></table></figure>
+
+<p>这里的 <code>PATH\TO\VOLUMELOCK</code> 替换成你 VolumeLock.exe 的目录，例如 <code>D:\Tools\VolumeLock</code>和 <code>D:\Tools\VolumeLock\VolumeLock.exe</code>。这样程序就可以静默在后台运行。</p>
+<p>然后我们把 <code>run.vbs</code> 的快捷方式放到开机启动项里：</p>
+<ol>
+<li>按 <code>Win + R</code>。</li>
+<li>输入：</li>
+</ol>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">shell:startup</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>在打开的目录里放入 <code>run.vbs</code> 的快捷方式。</li>
+</ol>
+<p>这样登录 Windows 后，VolumeLock 就会自动后台运行，锁定音量。</p>
 <p>以上。</p>
 </article>
 <div class="article-footer">
@@ -116,7 +149,7 @@
 
 </div>
 
-<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/2026/06/02/%E4%BD%BF%E7%94%A8VolumeLock%E9%94%81%E5%AE%9AQQ%E5%92%8C%E5%BE%AE%E4%BF%A1%E7%9A%84%E9%9F%B3%E9%87%8F/">使用 VolumeLock 锁定 QQ 和微信的音量</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2024/10/29/%E5%A6%82%E4%BD%95%E5%9C%A8ubuntu22-04%E4%B8%8B%E5%AE%89%E8%A3%85ros-noetic/">如何在ubuntu22.04下安装ros_noetic</a></div></section></div>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2026/02/21/bilibili%E8%AF%84%E8%AE%BA%E5%8C%BA%E9%92%93%E9%B1%BC%E9%93%BE%E6%8E%A5/">Bilibili 评论区钓鱼链接</a></div></section></div>
 
 
 
@@ -130,7 +163,7 @@
 
 
 
-<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%8E%B0%E8%B1%A1%E5%88%86%E6%9E%90"><span class="toc-text">现象分析</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A4%8D%E7%8E%B0%E5%92%8C%E6%96%B0%E9%97%AE%E9%A2%98"><span class="toc-text">复现和新问题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E7%82%B9%E7%BB%95%E8%BF%87"><span class="toc-text">一点绕过</span></a></li></ol></div><div class="widget-footer"><a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"><path stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/><path d="M7 3.338A9.95 9.95 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12c0-1.821.487-3.53 1.338-5"/></g></svg><span>回到顶部</span></a></div></widget>
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%B5%B7%E5%9B%A0"><span class="toc-text">起因</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD-VolumeLock"><span class="toc-text">下载 VolumeLock</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%89%8B%E5%8A%A8%E4%B8%8B%E8%BD%BD"><span class="toc-text">手动下载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8-Scoop-%E5%AE%89%E8%A3%85"><span class="toc-text">使用 Scoop 安装</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA-config-yaml"><span class="toc-text">创建 config.yaml</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8%E5%92%8C%E6%B5%8B%E8%AF%95"><span class="toc-text">启动和测试</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%9A%90%E8%97%8F%E7%AA%97%E5%8F%A3%E5%92%8C%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AF"><span class="toc-text">隐藏窗口和开机自启</span></a></li></ol></div><div class="widget-footer"><a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"><path stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/><path d="M7 3.338A9.95 9.95 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12c0-1.821.487-3.53 1.338-5"/></g></svg><span>回到顶部</span></a></div></widget>
 </div></aside><div class='float-panel'>
   <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
